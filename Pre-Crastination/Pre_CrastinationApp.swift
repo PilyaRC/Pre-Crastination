@@ -11,7 +11,9 @@ import SwiftUI
 struct Pre_CrastinationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ListView()
+            }
         }
     }
 }
