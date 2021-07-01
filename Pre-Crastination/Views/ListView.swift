@@ -9,17 +9,20 @@ import SwiftUI
 
 struct ListView: View {
 
-    @State var items: [String] = [
-        "Личные",
-        "Работа",
-        "Фильмы для просмотра"
+    @State var items: [ItemModel] = [
+        ItemModel(title: "Личные", isCompleted: false),
+        ItemModel(title: "Работа", isCompleted: true),
+        ItemModel(title: "Список фильмов", isCompleted: false),
 
     ]
 
     var body: some View {
         List {
-            ForEach(items, id: \.self) { item in ListRowView(title: item)
+            ForEach(items) { item in
+                ListRowView(item: item)
             }
+            .onDelete(perform: deleteItem)
+            .onMove(perform: moveItem)
         }
         .listStyle(PlainListStyle())
         .navigationTitle("Список дел")
@@ -30,6 +33,15 @@ struct ListView: View {
                     AddView())
         )
     }
+
+    func deleteItem(indexSet: IndexSet) {
+        items.remove(atOffsets: indexSet)
+    }
+
+    func moveItem(from: IndexSet, to: Int) {
+        items.move(fromOffsets: from, toOffset: to)
+    }
+
 }
 
 struct ListView_Previews: PreviewProvider {

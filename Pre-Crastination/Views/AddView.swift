@@ -23,7 +23,7 @@ struct AddView: View {
                 Button(action: {
 
                 }, label: {
-                    Text("Save".uppercased())
+                    Text("Сохранить".uppercased())
                         .foregroundColor(.white)
                         .font(.headline)
                         .frame(height: 55)

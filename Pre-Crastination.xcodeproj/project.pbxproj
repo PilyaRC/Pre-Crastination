@@ -13,6 +13,7 @@
 		04022AD7268BCC5100AE0611 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04022AD6268BCC5000AE0611 /* ListView.swift */; };
 		04022AD9268BD28D00AE0611 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04022AD8268BD28D00AE0611 /* ListRowView.swift */; };
 		04022ADB268BDB7000AE0611 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04022ADA268BDB7000AE0611 /* AddView.swift */; };
+		04022ADE268E6B0600AE0611 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04022ADD268E6B0600AE0611 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		04022AD6268BCC5000AE0611 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		04022AD8268BD28D00AE0611 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		04022ADA268BDB7000AE0611 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		04022ADD268E6B0600AE0611 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				04022AC6268BBE9A00AE0611 /* Pre_CrastinationApp.swift */,
+				04022ADC268E6AAE00AE0611 /* Models */,
+				04022ADF268E790500AE0611 /* ViewModels */,
 				04022AD5268BCC1200AE0611 /* Views */,
 				04022ACA268BBEAC00AE0611 /* Assets.xcassets */,
 				04022ACF268BBEAC00AE0611 /* Info.plist */,
@@ -81,6 +85,21 @@
 				04022ADA268BDB7000AE0611 /* AddView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		04022ADC268E6AAE00AE0611 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04022ADD268E6B0600AE0611 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04022ADF268E790500AE0611 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04022ADE268E6B0600AE0611 /* ItemModel.swift in Sources */,
 				04022ADB268BDB7000AE0611 /* AddView.swift in Sources */,
 				04022AC7268BBE9A00AE0611 /* Pre_CrastinationApp.swift in Sources */,
 				04022AD7268BCC5100AE0611 /* ListView.swift in Sources */,
